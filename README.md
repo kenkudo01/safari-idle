@@ -9,6 +9,10 @@ This project was generated with a template including simple application launcher
 - `core`: Main module with the application logic shared by all platforms.
 - `lwjgl3`: Primary desktop platform using LWJGL3; was called 'desktop' in older docs.
 
+## Class Dialog
+<img width="6113" height="3234" alt="bonsai-Class diagram drawio" src="https://github.com/user-attachments/assets/d145306c-84df-4de2-9e70-6b61b69340b4" />
+
+
 ## Gradle
 
 This project uses [Gradle](https://gradle.org/) to manage dependencies.
