@@ -1,5 +1,6 @@
 # 🐾 Safari Simulation Game
 Java / LibGDX / Group Project
+<img width="1276" height="740" alt="Screenshot 2025-12-01 135258" src="https://github.com/user-attachments/assets/d8ed8dc7-a437-4595-b4e2-42e3f1d824d2" />
 
 ---
 
@@ -67,7 +68,6 @@ GameController がゲーム進行・操作系を管理。
 ---
 
 ## 📘 UML Diagram
-UML 図はこちら：
 <img width="6113" height="3234" alt="bonsai-Class diagram drawio" src="https://github.com/user-attachments/assets/d145306c-84df-4de2-9e70-6b61b69340b4" />
 
 ## 👥 Team  
