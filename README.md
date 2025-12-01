@@ -1,37 +1,93 @@
-# Bonsai
+# 🐾 Safari Simulation Game
+Java / LibGDX / Group Project
 
-A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
+---
 
-This project was generated with a template including simple application launchers and an `ApplicationAdapter` extension that draws libGDX logo.
+## 📌 Overview
+本プロジェクトは、ELTE の *Software Technology* の課題として  
+Java と LibGDX を用いて開発した **サファリ箱庭シミュレーションゲーム** です。
 
-## Platforms
+動物の行動シミュレーション、レンジャー・ポーチャーの移動、  
+ランダム地形生成、UI 操作などを実装しています。
 
-- `core`: Main module with the application logic shared by all platforms.
-- `lwjgl3`: Primary desktop platform using LWJGL3; was called 'desktop' in older docs.
+---
 
-## Class Dialog
+## 🎮 Features
+- 🦁 **動物 AI シミュレーション**
+- 👮 **レンジャーが選択された動物へ移動し削除**
+- 🏹 **ポーチャーがランダム移動・特定動物を攻撃**
+- 🎛 **UI メニューで動物選択・削除・速度変更**
+- 📐 **MVC アーキテクチャ**
+- 🧪 **JUnit テスト（HumanTest / RangerTest）**
+
+---
+
+## 🖥️ Technologies Used
+- Java 17  
+- LibGDX  
+- Gradle  
+- JUnit  
+- SimplexNoise  
+- MVC Design Pattern  
+
+---
+## 🛠️ Why Java & LibGDX?
+
+アーキテクチャの学習（MVC・OOP・責務分離）を重視したため、Java と LibGDX を選択しました。
+
+### ✔ Java を選んだ理由
+- Java は強力な **オブジェクト指向（OOP）** 言語である  
+- 「Animal」「Ranger」「Poacher」「Map」といった  
+  **モデル層の構造化・抽象化に最適**
+- チームメンバーが Java に慣れており、  
+  **レビュー・コード共有がしやすい**
+
+### ✔ LibGDX を選んだ理由
+- View 層が明確に分離でき、  
+  **MVC と相性が良い**
+- Controller と Model を中心に  
+  **クリーンなアーキテクチャを構築しやすい**
+- ゲームエンジンとしての自由度が高く、  
+  **フルスクラッチに近い形でゲームロジックを実装できる**
+
+---
+
+## 🧩 Architecture (MVC)
+### ✔ Model
+動物、レンジャー、ポーチャー、マップなどの状態とロジックを保持。
+
+### ✔ View
+GameView / MapView が担当。  
+ゲーム画面・マップ描画・UIを担当。
+
+### ✔ Controller
+GameController がゲーム進行・操作系を管理。  
+ユーザー操作とモデル／ビューの橋渡しを行う。
+
+---
+
+## 📘 UML Diagram
+UML 図はこちら：
 <img width="6113" height="3234" alt="bonsai-Class diagram drawio" src="https://github.com/user-attachments/assets/d145306c-84df-4de2-9e70-6b61b69340b4" />
 
+## 👥 Team  
+ 3名でのグループ開発。  
+担当部分（Ken Kudo）：
 
-## Gradle
+### ✨ My Contributions
+- Human logic 生成 
+- Human のテストコード作成  
+- 脆弱性調査
+- MVC 設計の整理  
+- UML 図の設計 
+- コードレビューと Git 運用
 
-This project uses [Gradle](https://gradle.org/) to manage dependencies.
-The Gradle wrapper was included, so you can run Gradle tasks using `gradlew.bat` or `./gradlew` commands.
-Useful Gradle tasks and flags:
+---
 
-- `--continue`: when using this flag, errors will not stop the tasks from running.
-- `--daemon`: thanks to this flag, Gradle daemon will be used to run chosen tasks.
-- `--offline`: when using this flag, cached dependency archives will be used.
-- `--refresh-dependencies`: this flag forces validation of all dependencies. Useful for snapshot versions.
-- `build`: builds sources and archives of every project.
-- `cleanEclipse`: removes Eclipse project data.
-- `cleanIdea`: removes IntelliJ project data.
-- `clean`: removes `build` folders, which store compiled classes and built archives.
-- `eclipse`: generates Eclipse project data.
-- `idea`: generates IntelliJ project data.
-- `lwjgl3:jar`: builds application's runnable jar, which can be found at `lwjgl3/build/libs`.
-- `lwjgl3:run`: starts the application.
-- `test`: runs unit tests (if any).
-
-Note that most tasks that are not specific to a single project can be run with `name:` prefix, where the `name` should be replaced with the ID of a specific project.
-For example, `core:clean` removes `build` folder only from the `core` project.
+## 📝 Future Improvements
+- 動物 AI を増強（捕食・縄張り行動など）
+- 建物・オブジェクト設置機能
+- セーブ／ロード機能
+- マルチプレイ拡張
+  
+---
