@@ -5,7 +5,7 @@ Java / LibGDX / Group Project
 ---
 
 ## 📌 Overview
-本プロジェクトは、ELTE の *Software Technology* の課題として  
+
 Java と LibGDX を用いて開発した **サファリ箱庭シミュレーションゲーム** です。
 
 動物の行動シミュレーション、レンジャー・ポーチャーの移動、  
